@@ -15,6 +15,14 @@ Rails.application.configure do
   # Enable server timing.
   config.server_timing = true
 
+  # Allow hosting on *.replit.dev hosts
+  config.hosts << /.*\.replit.dev/
+
+  # Allow the app to be iframed on replit.com
+  config.action_dispatch.default_headers = {
+  "X-Frame-Options" => "ALLOWFROM replit.com"
+  }
+
   # Enable/disable Action Controller caching. By default Action Controller caching is disabled.
   # Run rails dev:cache to toggle Action Controller caching.
   if Rails.root.join("tmp/caching-dev.txt").exist?
