@@ -52,7 +52,7 @@ group :development, :test do
   gem "annotate"
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
-  gem "rspec-rails", "~> 7.1.0" # Adjust version as needed
+  gem "rspec-rails", "~> 7.1.1" # Adjust version as needed
   gem "factory_bot_rails"
   gem "ffaker"
   gem "faker"
