@@ -61,7 +61,7 @@ group :development, :test do
   gem "guard-rspec", require: false
   gem "rb-inotify", require: false  # For Linux
   gem "rb-fsevent", require: false  # For macOS
-  gem "listen", ">= 3.0.5", "< 3.2"
+  gem "listen", ">= 3.0.5", "< 3.10"
   gem "spring-commands-rspec" # Speeds up test runs
 end
 
